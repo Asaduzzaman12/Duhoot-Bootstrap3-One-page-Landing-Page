@@ -1,0 +1,1475 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Advanced Psd To Html</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/fonts/ghotam-book/styles.css">
+        <link rel="stylesheet" href="assets/fonts/ghotam-medium/styles.css">
+        <!-- This link for fontawesome icon -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+
+        
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        
+        <div class="all_site_hidden">
+        <!-- Header Area Start -->
+            <header id="mainHeader">
+                <div class="container">
+                    <div class="mainmenu">
+                        <nav class="navbar navbar-default navbar-fixed-top">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#"><img src="assets/img/logo/logo.png"></a>
+                            </div>
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <div class="header_all_items pull-right">
+                                    <ul class="nav navbar-nav menu_hover_lines">
+                                        <li><a href="#">Reality</a></li>
+                                        <li><a href="#">Living</a></li>
+                                        <li><a href="#">Education</a></li>
+                                        <li><a href="#">Entertainment</a></li>
+                                        <li><a href="#">Mobility</a></li>
+                                    </ul>
+
+                                    <div class="search_and_popup">
+                                        <div class="search">
+                                            <a href="#search"><i class="fa fa-search"></i></a>
+                                        </div> <!-- / .search -->
+
+                                        <!-- Start search form -->
+                                        <div id="search" class="animate">
+                                            <span class="close">X</span>
+                                            <form action="/search" id="searchform" method="get">
+                                                <input type="search" name="search" placeholder="Type To Search...">
+                                            </form>
+                                        </div> <!-- / #search -->
+                                        <!-- Start search form -->
+
+                                    </div>  <!-- / .search_and_popup -->
+
+                                    <!-- Start Login content -->
+                                    <div class="login_content_area">
+                                        <div class="login">
+                                            <a onclick="document.getElementById('id01').style.display='block'" href="#"><i class="fa fa-user"></i> Login</a>
+                                        </div>
+                                        <div class="login_content">
+                                            <div id="id01" class="modal">
+                                                <form class="modal_content animate" action="">
+                                                    <div class="login_image">
+                                                        <i class="fa fa-user"></i>
+                                                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                                    </div> <!-- / login_image -->
+                                                    <div class="login_form">
+                                                        <label for="uname" class="user"><b>Username</b></label>
+                                                        <input type="text" placeholder="Enter Username" name="uname" required><br><br>
+
+                                                        <label for="psw" class="user"><b>Password</b></label>
+                                                        <input type="password" placeholder="Enter Password" name="psw" required>
+                                                            
+                                                        <button type="submit" class="login_btn">Login</button>
+                                                       <label>
+                                                        <input type="checkbox" checked="checked" name="remember" class="user"> Remember me
+                                                      </label>
+                                                      <div class="cancel_btn">
+                                                          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                                            <span class="psw user">Forgot <a href="#">password?</a></span>
+                                                      </div> <!-- / cancel_btn -->
+                                                    </div> <!-- / login_form -->
+                                                </form> <!-- / form -->
+                                            </div> <!-- / #id01, .modal -->
+                                        </div> <!-- / .login_content -->
+                                    </div> <!-- / .login_content_are -->
+                                    <!-- End Login content -->
+                                    
+                                </div> <!-- /.header_all_items -->
+                            </div>    
+                        </nav> <!-- /.navbar /.navbar-default-->
+                    </div>  <!-- /.mainmenu-->
+                </div><!-- /.container-->
+                </div><!-- /.header_section-->
+            </header> <!-- / #mainHeader -->
+
+            <!--  Start search area -->
+            <section class="search_area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <div class="search_form">
+                                <form action=""> 
+                                    <div class="search_title">
+                                        <h2>What are you looking for?</h2>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="serch_form">
+                                                <form action="">
+                                                    <div class="form-group">
+                                                        <div class="select__option">
+                                                            <div class="select_icon">
+                                                                <select class="form-control">
+                                                                    <option value="Dubai">Dubai</option>
+                                                                    <option value="London">London</option>
+                                                                    <option value="Usa">Usa</option>
+                                                                    <option value="Kanada">Kanada</option>
+                                                                    <option value="Pakistan">Pakistan</option>
+                                                                    <option value="Singapur">Singapur</option>
+                                                                </select> <!--  /.select_option -->
+                                                            </div> <!--  /.select_icon -->
+                                                        </div> <!--  /.select_option -->
+                                                    </div> <!--  /.form-group" -->
+                                                 </form>
+                                            </div> <!--  /.filter_form" -->
+                                        </div> <!--  /.col -->
+                                        <div class="col-sm-6">
+                                            <div class="serch_form filter_form">
+                                            <div class="form-group">
+                                                <div class="select_option">
+                                                    <div class="select_icon">
+                                                        <select class="form-control">
+                                                            <option value="Education">Education</option>
+                                                            <option value="Physics">Physics</option>
+                                                            <option value="Chemistry">Chemistry</option>
+                                                            <option value="Mathmetics">Mathmetics</option>
+                                                            <option value="Biologo">Biologo</option>
+                                                            <option value="Cse">Cse</option>
+                                                        </select>
+                                                    </div> <!--  /.select_icon -->
+                                                </div>
+                                            </div>  
+                                        </div>
+                                    </div> <!--  /.row -->
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="text" placeholder="Keyword, name, date, ...">
+                                    </div> <!--  /.form-group -->
+
+                                    <div class="serch_button">
+                                        <div class="form-group">
+                                            <input type="submit" class="form-control" value="Search">
+                                        </div> <!--  /.form-group -->
+                                    </div> <!--  /.serch_buttonp -->
+                                </form>
+                            </div>
+                        </div>
+                    </div> <!--  /.row -->
+                </div> <!--  /.container -->
+            </section> <!--  /.search_area -->
+
+
+            <!-- Start filter Area -->
+            <section class="filter_area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="update_section">
+                                <ul>
+                                    <li class="active"><a href="#">Recommended</a></li>
+                                    <li><a href="#">latest</a></li>
+                                    <li><a href="#">Highlights</a></li>
+                                </ul>
+                            </div> <!-- /.update_section- -->
+                        </div> <!-- /.col- -->
+
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="filter_form">
+                                        <form action="">
+                                            <div class="form-group">
+                                                <div class="filter_option">
+                                                    <i class="fas fa-angle-down angel"></i>
+                                                    <div class="select_ano_filter">
+                                                        <select class="form-control filter_select">
+                                                            <option value="Dubai">Dubai</option>
+                                                            <option value="London">London</option>
+                                                            <option value="Usa">Usa</option>
+                                                            <option value="Kanada">Kanada</option>
+                                                            <option value="Pakistan">Pakistan</option>
+                                                            <option value="Singapur">Singapur</option>
+                                                        </select> <!--  /.form-control -->
+                                                    </div> <!--  /.select_icon -->
+                                                </div> <!--  /.filter_option -->
+                                            </div> <!--  /.filter_form -->
+                                        </form>
+                                    </div> 
+                                </div> <!-- /.col- -->
+                                <div class="col-sm-6">
+                                    <div class="filter_form">
+                                        <form action="">
+                                            <div class="form-group">
+                                                <div class="filter_option">
+                                                    <i class="fas fa-map-marker-alt"></i>
+                                                    <div class="select_ano_filter">
+                                                        <select class="form-control filter_select_two">
+                                                            <option value="Show Map">Show Map</option>
+                                                            <option value="London">London</option>
+                                                            <option value="Usa">Usa</option>
+                                                            <option value="Kanada">Kanada</option>
+                                                            <option value="Pakistan">Pakistan</option>
+                                                            <option value="Singapur">Singapur</option>
+                                                        </select> <!--  /.form-control -->
+                                                    </div> <!--  /.select_icon -->
+                                                </div> <!--  /.filter_option -->
+                                            </div> <!--  /.filter_form -->
+                                        </form>
+                                    </div> 
+                                </div> <!-- /.col- -->
+                            </div> <!-- /.row- -->
+                        </div> <!-- /.col- -->
+
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="filter_icon_section">
+                                <span>Filter:</span>
+                                <div class="filter_icon">
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-home filter_one"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-apple filter_two""></i></a></li>
+                                        <li><a href="#"><i class="fas fa-adjust filter_three""></i></a></li>
+                                        <li><a href="#"><i class="fas fa-music filter_four""></i></a></li>
+                                        <li><a href="#"><i class="fas fa-video filter_five""></i></a></li>
+
+                                    </ul>
+                                </div>
+                            </div> <!-- /.filter_icon_section- -->
+                        </div> <!-- /.col- -->
+                    </div> <!-- /.row -->
+                </div> <!-- /.container -->
+            </section> <!-- /.filter_area -->
+            <!-- End filter Area -->
+
+            <!-- Start Our Product Area -->
+            <section class="our_product_area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="our_product_content">
+                                <div class="single_product">
+                                    <div class="product_head">
+                                        <img src="assets/img/product-image1.jpg" alt="Product Image">
+                                        <div class="blog_icon">
+                                            <a href="#"><i class="fas fa-home"></i></a>
+                                        </div> <!-- /.blog_icon -->
+                                        <div class="product_prize">
+                                            <p>$2,990</p>
+                                        </div> <!-- /.product_prize -->
+                                        <div class="product_when_hover"> 
+                                            <div class="show_more">
+                                               <a href="#"><i class="fa fa-search"></i>Show More</a>
+                                            </div> <!-- /.show_more -->
+                                            <div class="rating">
+                                                <span>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                   <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </span>
+                                                <span>
+                                                    <i class="fa fa-comment"></i>
+                                                </span>
+                                            </div>
+                                        </div> <!-- /.product_when_hover -->
+                                    </div> <!-- /.product_head -->
+
+                                    <div class="product_body">
+                                        <div class="product_title">
+                                            <h3>2 bedroom house for rent in Dubai</h3>
+                                        </div> <!-- /.product_title -->
+                                        <div class="product_category">
+                                            <a href="#">Vision Agency</a>
+                                        </div> <!-- /.product_category -->
+                                        <ul class="product_rating_review">
+                                            <li>
+                                                <div class="rating_main star_4">
+                                                    <div class="full_rating ">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+
+                                                    </div> <!-- /.full_rating -->
+
+                                                    <div class="blank_rating">
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                    </div><!-- /.blank_rating -->
+                                                </div> <!-- /.rating_main -->
+                                            </li>
+                                            <li>
+                                               <a href="#">(365)</a> 
+                                            </li>
+                                        </ul> <!-- /.product_rating_review -->
+                                        
+                                    </div> <!-- /.product_body -->
+
+                                </div> <!-- /.single_product -->
+                            </div> <!-- /.our_product_content -->
+                        </div><!-- /.col -->
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="our_product_content">
+                                <div class="single_product">
+                                    <div class="product_head">
+                                        <img class="image2" src="assets/img/product-image2.jpg" alt="Product Image">
+                                        <div class="blog_icon">
+                                            <a href="#"><i class="fas fa-music music_icon"></i></a>
+                                        </div> <!-- /.blog_icon -->
+                                        <div class="product_when_hover"> 
+                                            <div class="show_more">
+                                               <a href="#"><i class="fa fa-search"></i>Show More</a>
+                                            </div> <!-- /.show_more -->
+                                            <div class="rating">
+                                                <span>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                   <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </span>
+                                                <span>
+                                                    <i class="fa fa-comment"></i>
+                                                </span>
+                                            </div>
+                                        </div> <!-- /.product_when_hover -->
+                                    </div> <!-- /.product_head -->
+
+                                    <div class="product_body">
+                                        <div class="product_title">
+                                            <h3>Beach party festival 2014</h3>
+                                        </div> <!-- /.product_title -->
+                                        <div class="pro_cat_rev">
+                                            <div class="product_category">
+                                                <a href="#" style="color:#F19E1F";>Long Beach</a>
+                                            </div> <!-- /.product_category -->
+                                            <ul class="product_rating_review">
+                                                <li>
+                                                    <div class="rating_main star_4">
+                                                        <div class="full_rating ">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+
+                                                        </div> <!-- /.full_rating -->
+
+                                                        <div class="blank_rating">
+                                                            <i class="far fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                        </div><!-- /.blank_rating -->
+                                                    </div> <!-- /.rating_main -->
+                                                </li>
+                                                <li>
+                                                   <a href="#">(1165)</a> 
+                                                </li>
+                                            </ul> <!-- /.product_rating_review -->
+                                        </div> <!-- /.pro_cat_rev -->
+                                        
+                                    </div> <!-- /.product_body -->
+
+                                </div> <!-- /.single_product -->
+                            </div> <!-- /.our_product_content -->
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="our_product_content">
+                                <div class="single_product">
+                                    <div class="product_head">
+                                        <img class="image3" src="assets/img/product-image3.jpg" alt="Product Image">
+                                        <div class="blog_icon">
+                                            <a href="#"><i class="fas fa-briefcase"></i></a>
+                                        </div> <!-- /.blog_icon -->
+                                        <div class="product_prize">
+                                            <p>$2,990</p>
+                                        </div> <!-- /.product_prize -->
+                                        <div class="product_when_hover"> 
+                                            <div class="show_more">
+                                               <a href="#"><i class="fa fa-search"></i>Show More</a>
+                                            </div> <!-- /.show_more -->
+                                            <div class="rating">
+                                                <span>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                   <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </span>
+                                                <span>
+                                                    <i class="fa fa-comment"></i>
+                                                </span>
+                                            </div>
+                                        </div> <!-- /.product_when_hover -->
+                                    </div> <!-- /.product_head -->
+
+                                    <div class="product_body">
+                                        <div class="product_title">
+                                            <h3>Aliquam quis pulvinar purus</h3>
+                                        </div> <!-- /.product_title -->
+                                        <div class="pro_cat_rev">
+                                            <div class="product_category">
+                                                <a class="product_category3" style="color: #88499C;" href="#">Bus Trans</a>
+                                            </div> <!-- /.product_category -->
+                                            <ul class="product_rating_review">
+                                                <li>
+                                                    <div class="rating_main star_4">
+                                                        <div class="full_rating ">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+
+                                                        </div> <!-- /.full_rating -->
+
+                                                        <div class="blank_rating">
+                                                            <i class="far fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                        </div><!-- /.blank_rating -->
+                                                    </div> <!-- /.rating_main -->
+                                                </li>
+                                                <li>
+                                                   <a href="#">(365)</a> 
+                                                </li>
+                                            </ul> <!-- /.product_rating_review -->
+                                        </div> <!-- /.pro_cat_rev -->
+                                    </div> <!-- /.product_body -->
+
+                                </div> <!-- /.single_product -->
+                            </div> <!-- /.our_product_content -->
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="our_product_content">
+                                <div class="single_product">
+                                    <div class="product_head">
+                                        <img src="assets/img/product-image4.jpg" alt="Product Image">
+                                        <div class="blog_icon">
+                                            <a href="#"><i class="fas fa-home"></i></a>
+                                        </div> <!-- /.blog_icon -->
+                                        <div class="product_prize">
+                                            <p>$2,990</p>
+                                        </div> <!-- /.product_prize -->
+                                        <div class="product_when_hover"> 
+                                            <div class="show_more">
+                                               <a href="#"><i class="fa fa-search"></i>Show More</a>
+                                            </div> <!-- /.show_more -->
+                                            <div class="rating">
+                                                <span>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                   <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </span>
+                                                <span>
+                                                    <i class="fa fa-comment"></i>
+                                                </span>
+                                            </div>
+                                        </div> <!-- /.product_when_hover -->
+                                    </div> <!-- /.product_head -->
+
+                                    <div class="product_body">
+                                        <div class="product_title">
+                                            <h3>4 bedroom house for rent in Dubai</h3>
+                                        </div> <!-- /.product_title -->
+                                        <div class="product_category">
+                                            <a href="#">reality Agency</a>
+                                        </div> <!-- /.product_category -->
+                                        <ul class="product_rating_review">
+                                            <li>
+                                                <div class="rating_main star_4">
+                                                    <div class="full_rating ">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+
+                                                    </div> <!-- /.full_rating -->
+
+                                                    <div class="blank_rating">
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                    </div><!-- /.blank_rating -->
+                                                </div> <!-- /.rating_main -->
+                                            </li>
+                                            <li>
+                                               <a href="#">(165)</a> 
+                                            </li>
+                                        </ul> <!-- /.product_rating_review -->
+                                    </div> <!-- /.product_body -->
+
+                                </div> <!-- /.single_product -->
+                            </div> <!-- /.our_product_content -->
+                        </div>
+                    </div> <!-- /.row -->
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="our_product_content">
+                                <div class="single_product big_product">
+                                    <div class="product_head">
+                                        <img src="assets/img/big-product-image1.jpg" alt="Big Product Image">
+                                        <div class="blog_icon">
+                                            <a href="#"><i class="fas fa-home"></i></a>
+                                        </div> <!-- /.blog_icon -->
+                                        <div class="big_product_category">
+                                            <h3>Vision agency</h3>
+                                        </div> <!-- /.product_category -->
+                                        <div class="big_product_rating">
+                                            <ul class="product_rating_review">
+                                                <li>
+                                                    <div class="rating_main star_4">
+                                                        <div class="full_rating ">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+
+                                                        </div> <!-- /.full_rating -->
+
+                                                        <div class="blank_rating">
+                                                            <i class="far fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                        </div><!-- /.blank_rating -->
+                                                    </div> <!-- /.rating_main -->
+                                                </li>
+                                                <li>
+                                                   <a href="#">(365)</a> 
+                                                </li>
+                                            </ul> <!-- /.product_rating_review -->
+                                        </div> <!-- /.big_product_rating -->
+                                        
+                                    </div> <!-- /.product_head -->
+
+                                    <div class="product_body">
+                                        <div class="client_content">
+                                            <div class="content_left">
+                                                <img src="assets/img/test-img1.png" alt="Client Image">
+                                            </div> <!-- /.content_left -->
+                                            <div class="content_right">
+                                                <div class="client_rating">
+                                                    <ul class="product_rating_review">
+                                                        <li>
+                                                            <div class="rating_main star_4">
+                                                                <div class="full_rating ">
+                                                                    <i class="fas fa-star"></i>
+                                                                    <i class="fas fa-star"></i>
+                                                                    <i class="fas fa-star"></i>
+                                                                    <i class="fas fa-star"></i>
+                                                                </div> <!-- /.full_rating -->
+
+                                                                <div class="blank_rating">
+                                                                        <i class="far fa-star"></i>
+                                                                        <i class="far fa-star"></i>
+                                                                        <i class="far fa-star"></i>
+                                                                        <i class="far fa-star"></i>
+                                                                </div><!-- /.blank_rating -->
+                                                            </div> <!-- /.rating_main -->
+                                                        </li>
+                                                    </ul> <!-- /.product_rating_review -->
+                                                </div> <!-- /.client_rating -->
+                                                <div class="client_title">
+                                                    <h4>Lucy-P</h4>
+                                                </div> <!-- /.client_title -->
+                                                <div class="clent_text">
+                                                    <p>Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla</p>. ... <a href="#">read more</a>
+                                                </div> <!-- /.clent_text -->
+                                            </div> <!-- /.content_right -->
+                                        </div> <!-- /.client_content -->
+                                    </div> <!-- /.product_body -->
+                                </div> <!-- /.single_product -->
+                            </div> <!-- /.our_product_content -->
+                        </div><!-- /.col -->
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="our_product_content">
+                               <div class="single_product big_product">
+                                    <div class="product_head">
+                                        <img class="right_image" src="assets/img/big-product-image2.jpg" alt="Big Product Image">
+                                        <div class="blog_icon">
+                                            <a class="other_blog_color" href="#"><i class="fas fa-home"></i></a>
+                                        </div> <!-- /.blog_icon -->
+                                        <div class="big_product_category">
+                                            <h3>Skybox club</h3>
+                                        </div> <!-- /.product_category -->
+                                        <div class="big_product_rating">
+                                            <ul class="product_rating_review">
+                                                <li>
+                                                    <div class="rating_main star_4">
+                                                        <div class="full_rating ">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+
+                                                        </div> <!-- /.full_rating -->
+
+                                                        <div class="blank_rating">
+                                                            <i class="far fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                        </div><!-- /.blank_rating -->
+                                                    </div> <!-- /.rating_main -->
+                                                </li>
+                                                <li>
+                                                   <a href="#">(1365)</a> 
+                                                </li>
+                                            </ul> <!-- /.product_rating_review -->
+                                        </div> <!-- /.big_product_rating -->
+                                        
+                                    </div> <!-- /.product_head -->
+
+                                    <div class="product_body">
+                                        <div class="client_content">
+                                            <div class="content_left">
+                                                <img src="assets/img/test-img2.png" alt="Client Image">
+                                            </div> <!-- /.content_left -->
+                                            <div class="content_right">
+                                                <div class="client_rating">
+                                                    <ul class="product_rating_review">
+                                                        <li>
+                                                            <div class="rating_main star_4">
+                                                                <div class="full_rating ">
+                                                                    <i class="fas fa-star"></i>
+                                                                    <i class="fas fa-star"></i>
+                                                                    <i class="fas fa-star"></i>
+                                                                    <i class="fas fa-star"></i>
+                                                                    <i class="fas fa-star"></i>
+                                                                    <i class="fas fa-star"></i>
+
+                                                                </div> <!-- /.full_rating -->
+
+                                                                <div class="blank_rating">
+                                                                        <i class="far fa-star"></i>
+                                                                        <i class="far fa-star"></i>
+                                                                        <i class="far fa-star"></i>
+                                                                        <i class="far fa-star"></i>
+                                                                </div><!-- /.blank_rating -->
+                                                            </div> <!-- /.rating_main -->
+                                                        </li>
+                                                    </ul> <!-- /.product_rating_review -->
+                                                </div> <!-- /.client_rating -->
+                                                <div class="client_title">
+                                                    <h4>Peter145</h4>
+                                                </div> <!-- /.client_title -->
+                                                <div class="clent_text">
+                                                    <p>Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla</p>. ... <a href="#">read more</a>
+                                                </div> <!-- /.clent_text -->
+                                            </div> <!-- /.content_right -->
+                                        </div> <!-- /.client_content -->
+                                    </div> <!-- /.product_body -->
+                                </div> <!-- /.single_product --> 
+                            </div> <!-- /.our_product_content -->
+                        </div>
+                    </div> <!-- /.row -->
+
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="our_product_content">
+                                <div class="single_product">
+                                    <div class="product_head">
+                                        <img src="assets/img/product-image1.jpg" alt="Product Image">
+                                        <div class="blog_icon">
+                                            <a href="#"><i class="fas fa-home"></i></a>
+                                        </div> <!-- /.blog_icon -->
+                                        <div class="product_prize">
+                                            <p>$2,990</p>
+                                        </div> <!-- /.product_prize -->
+                                        <div class="product_when_hover"> 
+                                            <div class="show_more">
+                                               <a href="#"><i class="fa fa-search"></i>Show More</a>
+                                            </div> <!-- /.show_more -->
+                                            <div class="rating">
+                                                <span>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                   <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </span>
+                                                <span>
+                                                    <i class="fa fa-comment"></i>
+                                                </span>
+                                            </div>
+                                        </div> <!-- /.product_when_hover -->
+                                    </div> <!-- /.product_head -->
+
+                                    <div class="product_body">
+                                        <div class="product_title">
+                                            <h3>2 bedroom house for rent in Dubai</h3>
+                                        </div> <!-- /.product_title -->
+                                        <div class="product_category">
+                                            <a href="#">Vision Agency</a>
+                                        </div> <!-- /.product_category -->
+                                        <ul class="product_rating_review">
+                                            <li>
+                                                <div class="rating_main star_4">
+                                                    <div class="full_rating ">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+
+                                                    </div> <!-- /.full_rating -->
+
+                                                    <div class="blank_rating">
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                    </div><!-- /.blank_rating -->
+                                                </div> <!-- /.rating_main -->
+                                            </li>
+                                            <li>
+                                               <a href="#">(365)</a> 
+                                            </li>
+                                        </ul> <!-- /.product_rating_review -->
+                                        
+                                    </div> <!-- /.product_body -->
+
+                                </div> <!-- /.single_product -->
+                            </div> <!-- /.our_product_content -->
+                        </div><!-- /.col -->
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="our_product_content">
+                                <div class="single_product">
+                                    <div class="product_head">
+                                        <img class="image2" src="assets/img/product-image2.jpg" alt="Product Image">
+                                        <div class="blog_icon">
+                                            <a href="#"><i class="fas fa-music music_icon"></i></a>
+                                        </div> <!-- /.blog_icon -->
+                                        <div class="product_when_hover"> 
+                                            <div class="show_more">
+                                               <a href="#"><i class="fa fa-search"></i>Show More</a>
+                                            </div> <!-- /.show_more -->
+                                            <div class="rating">
+                                                <span>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                   <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </span>
+                                                <span>
+                                                    <i class="fa fa-comment"></i>
+                                                </span>
+                                            </div>
+                                        </div> <!-- /.product_when_hover -->
+                                    </div> <!-- /.product_head -->
+
+                                    <div class="product_body">
+                                        <div class="product_title">
+                                            <h3>Beach party festival 2014</h3>
+                                        </div> <!-- /.product_title -->
+                                        <div class="pro_cat_rev">
+                                            <div class="product_category">
+                                                <a href="#" style="color:#F19E1F";>Long Beach</a>
+                                            </div> <!-- /.product_category -->
+                                            <ul class="product_rating_review">
+                                                <li>
+                                                    <div class="rating_main star_4">
+                                                        <div class="full_rating ">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+
+                                                        </div> <!-- /.full_rating -->
+
+                                                        <div class="blank_rating">
+                                                            <i class="far fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                        </div><!-- /.blank_rating -->
+                                                    </div> <!-- /.rating_main -->
+                                                </li>
+                                                <li>
+                                                   <a href="#">(1165)</a> 
+                                                </li>
+                                            </ul> <!-- /.product_rating_review -->
+                                        </div> <!-- /.pro_cat_rev -->
+                                        
+                                    </div> <!-- /.product_body -->
+
+                                </div> <!-- /.single_product -->
+                            </div> <!-- /.our_product_content -->
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="our_product_content">
+                                <div class="single_product">
+                                    <div class="product_head">
+                                        <img src="assets/img/product-image3.jpg" alt="Product Image">
+                                        <div class="blog_icon">
+                                            <a href="#"><i class="fas fa-briefcase"></i></a>
+                                        </div> <!-- /.blog_icon -->
+                                        <div class="product_prize">
+                                            <p>$2,990</p>
+                                        </div> <!-- /.product_prize -->
+                                        <div class="product_when_hover"> 
+                                            <div class="show_more">
+                                               <a href="#"><i class="fa fa-search"></i>Show More</a>
+                                            </div> <!-- /.show_more -->
+                                            <div class="rating">
+                                                <span>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                   <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </span>
+                                                <span>
+                                                    <i class="fa fa-comment"></i>
+                                                </span>
+                                            </div>
+                                        </div> <!-- /.product_when_hover -->
+                                    </div> <!-- /.product_head -->
+
+                                    <div class="product_body">
+                                        <div class="product_title">
+                                            <h3>Aliquam quis pulvinar purus</h3>
+                                        </div> <!-- /.product_title -->
+                                        <div class="pro_cat_rev">
+                                            <div class="product_category">
+                                                <a class="product_category3" style="color: #88499C;" href="#">Bus Trans</a>
+                                            </div> <!-- /.product_category -->
+                                            <ul class="product_rating_review">
+                                                <li>
+                                                    <div class="rating_main star_4">
+                                                        <div class="full_rating ">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+
+                                                        </div> <!-- /.full_rating -->
+
+                                                        <div class="blank_rating">
+                                                            <i class="far fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                        </div><!-- /.blank_rating -->
+                                                    </div> <!-- /.rating_main -->
+                                                </li>
+                                                <li>
+                                                   <a href="#">(365)</a> 
+                                                </li>
+                                            </ul> <!-- /.product_rating_review -->
+                                        </div> <!-- /.pro_cat_rev -->
+                                    </div> <!-- /.product_body -->
+
+                                </div> <!-- /.single_product -->
+                            </div> <!-- /.our_product_content -->
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="our_product_content">
+                                <div class="single_product">
+                                    <div class="product_head">
+                                        <img src="assets/img/product-image4.jpg" alt="Product Image">
+                                        <div class="blog_icon">
+                                            <a href="#"><i class="fas fa-home"></i></a>
+                                        </div> <!-- /.blog_icon -->
+                                        <div class="product_prize">
+                                            <p>$2,990</p>
+                                        </div> <!-- /.product_prize -->
+                                        <div class="product_when_hover"> 
+                                            <div class="show_more">
+                                               <a href="#"><i class="fa fa-search"></i>Show More</a>
+                                            </div> <!-- /.show_more -->
+                                            <div class="rating">
+                                                <span>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                   <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </span>
+                                                <span>
+                                                    <i class="fa fa-comment"></i>
+                                                </span>
+                                            </div>
+                                        </div> <!-- /.product_when_hover -->
+                                    </div> <!-- /.product_head -->
+
+                                    <div class="product_body">
+                                        <div class="product_title">
+                                            <h3>4 bedroom house for rent in Dubai</h3>
+                                        </div> <!-- /.product_title -->
+                                        <div class="product_category">
+                                            <a href="#">reality Agency</a>
+                                        </div> <!-- /.product_category -->
+                                        <ul class="product_rating_review">
+                                            <li>
+                                                <div class="rating_main star_4">
+                                                    <div class="full_rating ">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+
+                                                    </div> <!-- /.full_rating -->
+
+                                                    <div class="blank_rating">
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                    </div><!-- /.blank_rating -->
+                                                </div> <!-- /.rating_main -->
+                                            </li>
+                                            <li>
+                                               <a href="#">(165)</a> 
+                                            </li>
+                                        </ul> <!-- /.product_rating_review -->
+                                    </div> <!-- /.product_body -->
+
+                                </div> <!-- /.single_product -->
+                            </div> <!-- /.our_product_content -->
+                        </div>
+                    </div> <!-- /.row -->
+
+
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="our_product_content">
+                               <div class="single_product big_product">
+                                    <div class="product_head">
+                                        <img class="right_image" src="assets/img/big-product-image2.jpg" alt="Big Product Image">
+                                        <div class="blog_icon">
+                                            <a class="other_blog_color" href="#"><i class="fas fa-home"></i></a>
+                                        </div> <!-- /.blog_icon -->
+                                        <div class="big_product_category">
+                                            <h3>Skybox club</h3>
+                                        </div> <!-- /.product_category -->
+                                        <div class="big_product_rating">
+                                            <ul class="product_rating_review">
+                                                <li>
+                                                    <div class="rating_main star_4">
+                                                        <div class="full_rating ">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+
+                                                        </div> <!-- /.full_rating -->
+
+                                                        <div class="blank_rating">
+                                                            <i class="far fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                        </div><!-- /.blank_rating -->
+                                                    </div> <!-- /.rating_main -->
+                                                </li>
+                                                <li>
+                                                   <a href="#">(1365)</a> 
+                                                </li>
+                                            </ul> <!-- /.product_rating_review -->
+                                        </div> <!-- /.big_product_rating -->
+                                        
+                                    </div> <!-- /.product_head -->
+
+                                    <div class="product_body">
+                                        <div class="client_content">
+                                            <div class="content_left">
+                                                <img src="assets/img/test-img2.png" alt="Client Image">
+                                            </div> <!-- /.content_left -->
+                                            <div class="content_right">
+                                                <div class="client_rating">
+                                                    <ul class="product_rating_review">
+                                                        <li>
+                                                            <div class="rating_main star_4">
+                                                                <div class="full_rating ">
+                                                                    <i class="fas fa-star"></i>
+                                                                    <i class="fas fa-star"></i>
+                                                                    <i class="fas fa-star"></i>
+                                                                    <i class="fas fa-star"></i>
+                                                                    <i class="fas fa-star"></i>
+                                                                    <i class="fas fa-star"></i>
+
+                                                                </div> <!-- /.full_rating -->
+
+                                                                <div class="blank_rating">
+                                                                        <i class="far fa-star"></i>
+                                                                        <i class="far fa-star"></i>
+                                                                        <i class="far fa-star"></i>
+                                                                        <i class="far fa-star"></i>
+                                                                </div><!-- /.blank_rating -->
+                                                            </div> <!-- /.rating_main -->
+                                                        </li>
+                                                    </ul> <!-- /.product_rating_review -->
+                                                </div> <!-- /.client_rating -->
+                                                <div class="client_title">
+                                                    <h4>Peter145</h4>
+                                                </div> <!-- /.client_title -->
+                                                <div class="clent_text">
+                                                    <p>Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla</p>. ... <a href="#">read more</a>
+                                                </div> <!-- /.clent_text -->
+                                            </div> <!-- /.content_right -->
+                                        </div> <!-- /.client_content -->
+                                    </div> <!-- /.product_body -->
+                                </div> <!-- /.single_product --> 
+                            </div> <!-- /.our_product_content -->
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <div class="our_product_content bottom_product">
+                                        <div class="single_product">
+                                            <div class="product_head">
+                                                <img src="assets/img/product-image1.jpg" alt="Product Image">
+                                                <div class="blog_icon">
+                                                    <a href="#"><i class="fas fa-home"></i></a>
+                                                </div> <!-- /.blog_icon -->
+                                                <div class="product_prize">
+                                                    <p>$2,990</p>
+                                                </div> <!-- /.product_prize -->
+                                                <div class="product_when_hover"> 
+                                                    <div class="show_more">
+                                                       <a href="#"><i class="fa fa-search"></i>Show More</a>
+                                                    </div> <!-- /.show_more -->
+                                                    <div class="rating">
+                                                        <span>
+                                                            <i class="far fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                           <i class="far fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                        </span>
+                                                        <span>
+                                                            <i class="fa fa-comment"></i>
+                                                        </span>
+                                                    </div>
+                                                </div> <!-- /.product_when_hover -->
+                                            </div> <!-- /.product_head -->
+
+                                            <div class="product_body">
+                                                <div class="body_content">
+                                                    <div class="product_title">
+                                                    <h3>2 bedroom house for rent in Dubai</h3>
+                                                </div> <!-- /.product_title -->
+                                                <div class="product_category">
+                                                    <a href="#">Vision Agency</a>
+                                                </div> <!-- /.product_category -->
+                                                <ul class="product_rating_review">
+                                                    <li>
+                                                        <div class="rating_main star_4">
+                                                            <div class="full_rating ">
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+
+                                                            </div> <!-- /.full_rating -->
+
+                                                            <div class="blank_rating">
+                                                                <i class="far fa-star"></i>
+                                                                <i class="far fa-star"></i>
+                                                                <i class="far fa-star"></i>
+                                                                <i class="far fa-star"></i>
+                                                            </div><!-- /.blank_rating -->
+                                                        </div> <!-- /.rating_main -->
+                                                    </li>
+                                                    <li>
+                                                       <a href="#">(365)</a> 
+                                                    </li>
+                                                </ul> <!-- /.product_rating_review -->
+                                                </div>
+                                                
+                                            </div> <!-- /.product_body -->
+
+                                        </div> <!-- /.single_product -->
+                                    </div> <!-- /.our_product_content -->
+                            </div><!-- /.col -->
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="our_product_content bottom_product">
+                                <div class="single_product">
+                                    <div class="product_head">
+                                        <img class="image2" src="assets/img/product-image2.jpg" alt="Product Image">
+                                        <div class="blog_icon">
+                                            <a href="#"><i class="fas fa-music music_icon"></i></a>
+                                        </div> <!-- /.blog_icon -->
+                                        <div class="product_when_hover"> 
+                                            <div class="show_more">
+                                               <a href="#"><i class="fa fa-search"></i>Show More</a>
+                                            </div> <!-- /.show_more -->
+                                            <div class="rating">
+                                                <span>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                   <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </span>
+                                                <span>
+                                                    <i class="fa fa-comment"></i>
+                                                </span>
+                                            </div>
+                                        </div> <!-- /.product_when_hover -->
+                                    </div> <!-- /.product_head -->
+
+                                    <div class="product_body">
+                                        <div class="body_content">
+                                            <div class="product_title">
+                                                <h3>Beach party festival 2014</h3>
+                                            </div> <!-- /.product_title -->
+                                            <div class="pro_cat_rev">
+                                                <div class="product_category">
+                                                    <a href="#" style="color:#F19E1F";>Long Beach</a>
+                                                </div> <!-- /.product_category -->
+                                                <ul class="product_rating_review">
+                                                    <li>
+                                                        <div class="rating_main star_4">
+                                                            <div class="full_rating ">
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+
+                                                            </div> <!-- /.full_rating -->
+
+                                                            <div class="blank_rating">
+                                                                <i class="far fa-star"></i>
+                                                                <i class="far fa-star"></i>
+                                                                <i class="far fa-star"></i>
+                                                                <i class="far fa-star"></i>
+                                                            </div><!-- /.blank_rating -->
+                                                        </div> <!-- /.rating_main -->
+                                                    </li>
+                                                    <li>
+                                                       <a href="#">(1165)</a> 
+                                                    </li>
+                                                </ul> <!-- /.product_rating_review -->
+                                            </div> <!-- /.pro_cat_rev -->
+                                        </div>
+                                        
+                                    </div> <!-- /.product_body -->
+
+                                </div> <!-- /.single_product -->
+                            </div> <!-- /.our_product_content -->
+                        </div>
+
+                            </div> <!-- /.row -->
+                        </div> <!-- /.col -->
+                    </div> <!-- /.row -->
+
+                    
+                    <div class="bottom_link_button">
+                        <a href="#">Load More <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div> <!-- /.bottom_link_button -->
+
+                </div> <!-- /.container -->
+            </section> <!-- /.our_product_area -->
+            <!-- End Our Product Area -->
+
+
+             <section class="offer_area">
+                 <div class="container">
+                     <div class="offer_content">
+                            <div class="offer_heading">
+                                <h3>What can DuHoot offer to you?</h3>
+                                <p>Etiam cursus ipsum quis enim faucibus</p>
+                            </div> <!-- / .offer_heading -->
+
+                            <div class="offer_list">
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a href="#tab1" data-toggle="tab"><i class="fas fa-home"></i></a></li>
+                                    <li><a href="#tab2" data-toggle="tab"><i class="fas fa-cube"></i></a></li>
+                                    <li><a href="#tab3" data-toggle="tab"><i class="fas fa-graduation-cap"></i></a></li>
+                                    <li><a href="#tab4" data-toggle="tab"><i class="fas fa-music"></i></a></li>
+                                    <li><a href="#tab5" data-toggle="tab"><i class="fas fa-archive"></i></a></li>
+                                </ul>
+                            </div> <!-- / .offer_list -->
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="tab1">
+                                    <div class="offer_list_content">
+                                        <div class="list_heading">
+                                              <h3>Reality</h3>
+                                        </div> <!-- / .list_heading -->
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="content_left">
+                                                    <div class="con_left_icon">
+                                                            <i class="far fa-heart"></i>
+                                                    </div> <!-- / .con_left_icon -->
+                                                    <div class="text">
+                                                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+                                                    </div> <!-- / .text -->
+                                                </div> <!-- / .content_left -->
+                                                
+                                            </div> <!-- / .col -->
+                                            <div class="col-sm-6">
+                                                <div class="content_right" >
+                                                    <div class="con_right_icon">
+                                                            <i class="fas fa-coffee"></i>
+                                                    </div> <!-- / .content_right -->
+                                                    <div class="text">
+                                                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+                                                    </div> <!-- / .text -->
+                                                </div> <!-- / content_right -->
+                                            </div> <!-- / .col -->
+                                        </div> <!-- / .row -->
+                                    </div> <!-- / .offer_list_content -->
+                                </div> <!-- / .tab-pane -->
+
+                                <div class="tab-pane fade" id="tab2">
+                                    <div class="offer_list_content">
+                                        <div class="list_heading">
+                                              <h3>Reality</h3>
+                                        </div> <!-- / .list_heading -->
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="content_left">
+                                                    <div class="con_left_icon">
+                                                            <i class="fab fa-facebook-messenger"></i>
+                                                    </div> <!-- / .con_left_icon -->
+                                                    <div class="text">
+                                                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+                                                    </div> <!-- / .text -->
+                                                </div> <!-- / .content_left -->
+                                                
+                                            </div> <!-- / .col -->
+                                            <div class="col-sm-6">
+                                                <div class="content_right" >
+                                                    <div class="con_right_icon">
+                                                            <i class="fas fa-smile"></i>
+                                                    </div> <!-- / .content_right -->
+                                                    <div class="text">
+                                                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+                                                    </div> <!-- / .text -->
+                                                </div> <!-- / content_right -->
+                                            </div> <!-- / .col -->
+                                        </div> <!-- / .row -->
+                                    </div> <!-- / .offer_list_content -->
+                                </div> <!-- / .tab-pane -->
+
+                               <div class="tab-pane fade" id="tab3">
+                                    <div class="offer_list_content">
+                                        <div class="list_heading">
+                                              <h3>Reality</h3>
+                                        </div> <!-- / .list_heading -->
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="content_left">
+                                                    <div class="con_left_icon">
+                                                            <i class="fab fa-twitter"></i>
+                                                    </div> <!-- / .con_left_icon -->
+                                                    <div class="text">
+                                                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+                                                    </div> <!-- / .text -->
+                                                </div> <!-- / .content_left -->
+                                                
+                                            </div> <!-- / .col -->
+                                            <div class="col-sm-6">
+                                                <div class="content_right" >
+                                                    <div class="con_right_icon">
+                                                            <i class="fas fa-volume-up"></i>
+                                                    </div> <!-- / .content_right -->
+                                                    <div class="text">
+                                                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+                                                    </div> <!-- / .text -->
+                                                </div> <!-- / content_right -->
+                                            </div> <!-- / .col -->
+                                        </div> <!-- / .row -->
+                                    </div> <!-- / .offer_list_content -->
+                                </div> <!-- / .tab-pane -->
+                          
+
+   
+                                <div class="tab-pane fade" id="tab4">
+                                    <div class="offer_list_content">
+                                        <div class="list_heading">
+                                              <h3>Reality</h3>
+                                        </div> <!-- / .list_heading -->
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="content_left">
+                                                    <div class="con_left_icon">
+                                                           <i class="fab fa-amilia"></i>
+                                                    </div> <!-- / .con_left_icon -->
+                                                    <div class="text">
+                                                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+                                                    </div> <!-- / .text -->
+                                                </div> <!-- / .content_left -->
+                                                
+                                            </div> <!-- / .col -->
+                                            <div class="col-sm-6">
+                                                <div class="content_right" >
+                                                    <div class="con_right_icon"><i class="fas fa-audio-description"></i>
+                                                    </div> <!-- / .content_right -->
+                                                    <div class="text">
+                                                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+                                                    </div> <!-- / .text -->
+                                                </div> <!-- / content_right -->
+                                            </div> <!-- / .col -->
+                                        </div> <!-- / .row -->
+                                    </div> <!-- / .offer_list_content -->
+                                </div> <!-- / .tab-pane -->
+                     
+
+                                <div class="tab-pane fade" id="tab5">
+                                    <div class="offer_list_content">
+                                        <div class="list_heading">
+                                              <h3>Reality</h3>
+                                        </div> <!-- / .list_heading -->
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="content_left">
+                                                    <div class="con_left_icon">
+                                                            <i class="fab fa-blogger"></i>
+                                                    </div> <!-- / .con_left_icon -->
+                                                    <div class="text">
+                                                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+                                                    </div> <!-- / .text -->
+                                                </div> <!-- / .content_left -->
+                                                
+                                            </div> <!-- / .col -->
+                                            <div class="col-sm-6">
+                                                <div class="content_right" >
+                                                    <div class="con_right_icon">
+                                                            <i class="fas fa-asterisk"></i>
+                                                    </div> <!-- / .content_right -->
+                                                    <div class="text">
+                                                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+                                                    </div> <!-- / .text -->
+                                                </div> <!-- / content_right -->
+                                            </div> <!-- / .col -->
+                                        </div> <!-- / .row -->
+                                    </div> <!-- / .offer_list_content -->
+                                </div> <!-- / .tab-pane -->
+                            </div>  <!-- / .tab-content -->
+                            
+                     </div> <!-- / .offer_content -->
+                 </div> <!-- / .container -->
+             </section> <!-- / .offer_area -->
+
+
+             <!-- Start footer area -->
+             <section class="footer_area">
+                 <div class="container">
+                     <div class="footer_content">
+                         <div class="subcribe_content text-center">
+                             <h3>Subscribe to our newsletter</h3>
+                             <div class="subcribe_email">
+                                 <div class="form-group">
+                                    <span><i class="far fa-envelope"></i></span>
+                                     <input type="email" class="form-control email_form" name="email" placeholder="your@email.com">
+                                 </div> <!-- / .form-group -->
+                             
+                                 <div class="subcribe_button">
+                                     <div class="form-group">
+                                         <input type="submit" class="form-control subcribe_btn" value="Subscribe">
+                                     </div> <!-- / .form-group -->
+                                 </div> <!-- / .subcribe_button -->
+                            </div> <!-- / .subcribe_email -->
+                         </div> <!-- / .subcribe_content -->
+                         <div class="footer_bottom">
+                             <div class="row">
+                                 <div class="col-xs-12- col-sm-6 col-md-4">
+                                     <div class="single_bottom_content">
+                                         <h4>Ipsum quis</h4>
+                                         <ul>
+                                             <li><a href="#">Aliquam quis</a></li>
+                                             <li><a href="#">Pulvinar purus</a></li>
+                                             <li><a href="#">Etiam cursus</a></li>
+                                             <li><a href="#">Ipsum quis</a></li>
+                                             <li><a href="#">Enim faucibus</a></li>
+                                         </ul>
+                                     </div> <!-- / .csingle_bottom_content -->
+                                 </div> <!-- / .col- -->
+                                 <div class="col-xs-12- col-sm-6 col-md-4">
+                                     <div class="single_bottom_content">
+                                         <h4>Ipsum quis</h4>
+                                         <ul>
+                                             <li><a href="#">Aliquam quis</a></li>
+                                             <li><a href="#">Pulvinar purus</a></li>
+                                             <li><a href="#">Etiam cursus</a></li>
+                                             <li><a href="#">Ipsum quis</a></li>
+                                             <li><a href="#">Enim faucibus</a></li>
+                                         </ul>
+                                     </div> <!-- / .csingle_bottom_content -->
+                                 </div> <!-- / .col- -->
+
+                                 <div class="col-xs-12- col-sm-6 col-md-4">
+                                     <div class="single_bottom_content">
+                                         <h4>Follow us</h4>
+                                        <div class="social">
+                                            <ul>
+                                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                            </ul>
+                                        </div> <!-- / .social -->
+                                        <p>Copyright &copy; All Rights reserved</p>
+                                     </div> <!-- / .single_bottom_content -->
+                                 </div> <!-- / .col- -->
+                             </div> <!-- / .row -->
+                         </div> <!-- / .footer_bottom -->
+                     </div> <!-- / .footer_content -->
+                 </div> <!-- / .container -->
+             </section> <!-- / .footer_area -->
+             <!-- End footer area -->
+
+
+
+        </div> <!-- / .all_site_hidden -->
+
+
+
+        <div class="scroll_top_button">
+            <i class="fas fa-arrow-up"></i>
+        </div> <!-- / .scroll_top_button -->
+
+        <script src="assets/js/jquery-3.3.1.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+
+        <script src="assets/js/plugins.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/custom.js"></script>
+
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. 
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+        -->
+    </body>
+</html>
